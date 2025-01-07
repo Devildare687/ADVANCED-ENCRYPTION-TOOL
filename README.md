@@ -100,16 +100,16 @@ When the tool is running, you will observe:
 
 ### **Example Output Screens**
 
-- Creation of key  
+1. Creation of key  
 
 ![output2](https://github.com/user-attachments/assets/7c4c311a-d6b1-4f53-8c86-2a9cf287d4fa)
 
-- Encryption Success Screen
+2. Encryption Success Screen
 
 ![output3](https://github.com/user-attachments/assets/a422cdeb-00fb-4954-9f63-ac1215d263fb)
 - The creation of encrypted `.enc` files and their seamless restoration to the original format.
 
-- Decryption Success Screen
+3. Decryption Success Screen
 
 ![output4](https://github.com/user-attachments/assets/5ea99e1c-728a-45ec-9e08-14052fcb849a)
 
