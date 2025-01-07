@@ -72,7 +72,7 @@ The Advanced Encryption Tool operates in two primary modes: encryption and decry
 
 ---
 
-### TESTING THE TOOL
+### Testing the tool
 
 1. For testing purposes, you can try encrypting a sample text file.  
 2. Use a secure passphrase and observe how the `.enc` file is generated.  
@@ -80,7 +80,7 @@ The Advanced Encryption Tool operates in two primary modes: encryption and decry
 
 ---
 
-### PRECAUTIONS
+### Precautions
 
 - **Passphrase Security:** Always remember the passphrase you set. The encrypted files cannot be decrypted without it.
 - **Backup Your Data:** Before encrypting critical files, create a backup to avoid accidental loss.
