@@ -28,7 +28,7 @@ The Advanced Encryption Tool is a cutting-edge application designed to ensure th
   The tool employs an advanced key generation mechanism that converts the user-provided passphrase into a secure cryptographic key using a hashing algorithm. This ensures that even weak or short passphrases are strengthened into robust keys. The generated key is then used for both encryption and decryption, eliminating the need for manual key management.
 
 - **Batch File Support for Ease of Use**  
-  To simplify the process, a custom batch file (`encryption_tool.bat`) has been included. With this, users can launch the tool directly as an application, eliminating the need to manually execute terminal commands.
+  To simplify the process, a custom batch file (`run_tool.bat`) has been included. With this, users can launch the tool directly as an application, eliminating the need to manually execute terminal commands.
 
 - **Error Handling**  
   The tool includes robust error handling mechanisms. It gracefully handles scenarios such as invalid file paths, incorrect passphrases, or corrupted files, ensuring a smooth and frustration-free experience for users.
