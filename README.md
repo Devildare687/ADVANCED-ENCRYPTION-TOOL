@@ -35,16 +35,16 @@ The Advanced Encryption Tool is a cutting-edge application designed to ensure th
 
 ---
 
-## How it works 
+### How it works 
 
 The Advanced Encryption Tool operates in two primary modes: encryption and decryption.
 
-### **Encryption**
+#### **Encryption**
 - The user selects a file to encrypt and provides a secure passphrase.
 - The tool encrypts the file, generating a new `.enc` file while leaving the original file untouched.
 - The `.enc` file is fully encrypted and cannot be accessed without the correct passphrase.
 
-### **Decryption**
+#### **Decryption**
 - The user selects an encrypted `.enc` file and inputs the correct passphrase.
 - The tool decrypts the file and restores it to its original format.
 - If an incorrect passphrase is provided, the tool notifies the user without making any modifications to the file.
