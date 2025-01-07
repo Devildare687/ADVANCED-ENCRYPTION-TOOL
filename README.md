@@ -93,15 +93,20 @@ The Advanced Encryption Tool operates in two primary modes: encryption and decry
 ## OUTPUT
 
 When the tool is running, you will observe:
+![output1](https://github.com/user-attachments/assets/5dc6d837-dce1-4bf3-9d2e-b807993c45da)
 
 - A clear and simple menu offering encryption and decryption options.
-- Status messages indicating successful encryption or decryption, or errors in case of incorrect inputs.
 - The creation of encrypted `.enc` files and their seamless restoration to the original format.
 
 ### **Example Output Screens**
 
+- Creation of key  
+![output2](https://github.com/user-attachments/assets/7c4c311a-d6b1-4f53-8c86-2a9cf287d4fa)
 - Encryption Success Screen  
+![output3](https://github.com/user-attachments/assets/a422cdeb-00fb-4954-9f63-ac1215d263fb)
+- The creation of encrypted `.enc` files and their seamless restoration to the original format.
 - Decryption Success Screen  
-- Error Handling Screen  
+![output4](https://github.com/user-attachments/assets/5ea99e1c-728a-45ec-9e08-14052fcb849a)
+
 
 This Advanced Encryption Tool demonstrates how secure data management can be both powerful and user-friendly. By combining robust cryptographic methods with intuitive usability, it serves as a reliable solution for safeguarding sensitive information.
