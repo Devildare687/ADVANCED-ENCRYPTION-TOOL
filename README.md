@@ -25,7 +25,7 @@ The Advanced Encryption Tool is a cutting-edge application designed to ensure th
   Instead of requiring users to manage complex keys, the tool generates cryptographic keys based on a user-defined passphrase. This approach balances security with user-friendliness, ensuring that only the correct passphrase can unlock the encrypted data.
 
 - **Key Generation**  
-  The tool employs an advanced key generation mechanism that converts the user-provided passphrase into a secure cryptographic key using a hashing algorithm (PBKDF2 with SHA-256). This ensures that even weak or short passphrases are strengthened into robust keys. The generated key is then used for both encryption and decryption, eliminating the need for manual key management.
+  The tool employs an advanced key generation mechanism that converts the user-provided passphrase into a secure cryptographic key using a hashing algorithm. This ensures that even weak or short passphrases are strengthened into robust keys. The generated key is then used for both encryption and decryption, eliminating the need for manual key management.
 
 - **Batch File Support for Ease of Use**  
   To simplify the process, a custom batch file (`encryption_tool.bat`) has been included. With this, users can launch the tool directly as an application, eliminating the need to manually execute terminal commands.
@@ -58,12 +58,13 @@ The Advanced Encryption Tool operates in two primary modes: encryption and decry
 
 #### 2. Install Required Libraries
 - The tool relies on the `pycryptodome` library for its cryptographic functions. Install it using the following command:
+
   ```bash
   pip install pycryptodome
   ```
 
 #### 3. Run the Tool
-- Use the included batch file (`encryption_tool.bat`) to launch the tool with a double-click. This batch file has been specifically designed to provide a smooth user experience, avoiding the need for terminal commands like `python tool.py`.
+- Use the included batch file (`run_tool.bat`) to launch the tool with a double-click. This batch file has been specifically designed to provide a smooth user experience, avoiding the need for terminal commands like `python tool.py`.
 
 #### Encrypt and Decrypt
 
