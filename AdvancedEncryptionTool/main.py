@@ -1,25 +1,21 @@
 import os
 from cryptography.fernet import Fernet
 
-# Create folder structure
 os.makedirs("encrypted_files", exist_ok=True)
 os.makedirs("decrypted_files", exist_ok=True)
 
-# Header for the tool
 def print_header():
     print("===================================================================")
     print("||                  ADVANCED ENCRYPTION TOOL                     ||")
     print("||              Secure Your Files with AES-256!                 ||")
     print("===================================================================")
 
-# Generate and save a key
 def generate_key():
     key = Fernet.generate_key()
     with open("key.key", "wb") as key_file:
         key_file.write(key)
     print("Key generated and saved to 'key.key'.")
 
-# Load an existing key
 def load_key():
     try:
         with open("key.key", "rb") as key_file:
@@ -28,7 +24,6 @@ def load_key():
         print("Error: Key file not found. Generate a key first.")
         return None
 
-# Encrypt a file
 def encrypt_file(file_path):
     key = load_key()
     if key is None:
@@ -41,7 +36,6 @@ def encrypt_file(file_path):
         fernet = Fernet(key)
         encrypted_data = fernet.encrypt(data)
 
-        # Save encrypted file in the "encrypted_files" folder
         file_name = os.path.basename(file_path)
         encrypted_path = os.path.join("encrypted_files", file_name + ".enc")
         with open(encrypted_path, "wb") as encrypted_file:
@@ -51,7 +45,6 @@ def encrypt_file(file_path):
     except Exception as e:
         print(f"Error encrypting file: {e}")
 
-# Decrypt a file
 def decrypt_file(file_path):
     key = load_key()
     if key is None:
@@ -64,7 +57,6 @@ def decrypt_file(file_path):
         fernet = Fernet(key)
         decrypted_data = fernet.decrypt(encrypted_data)
 
-        # Save decrypted file in the "decrypted_files" folder
         file_name = os.path.basename(file_path).replace(".enc", "")
         decrypted_path = os.path.join("decrypted_files", file_name)
         with open(decrypted_path, "wb") as decrypted_file:
@@ -74,7 +66,6 @@ def decrypt_file(file_path):
     except Exception as e:
         print(f"Error decrypting file: {e}")
 
-# Menu to navigate the tool
 def main_menu():
     while True:
         print_header()
